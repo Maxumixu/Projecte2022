@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex"
+path="res://.import/baixa.jpg-a42ffa4174d3d4ba10539bef6c89281f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icon.png"
-dest_files=[ "res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex" ]
+source_file="res://imatges/baixa.jpg"
+dest_files=[ "res://.import/baixa.jpg-a42ffa4174d3d4ba10539bef6c89281f.stex" ]
 
 [params]
 

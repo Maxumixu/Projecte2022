@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://escenes/zona.tscn" type="PackedScene" id=1]
+[ext_resource path="res://escenes/personatge.tscn" type="PackedScene" id=2]
+
+[node name="Node2D" type="Node2D"]
+__meta__ = {
+"_edit_horizontal_guides_": [  ]
+}
+
+[node name="personatge" parent="." instance=ExtResource( 2 )]
+
+[node name="Zona" parent="." instance=ExtResource( 1 )]
+position = Vector2( 972, 158 )
+rotation = 3.14159
+scale = Vector2( 0.509667, -0.588677 )
+
+[node name="Zona2" parent="." instance=ExtResource( 1 )]
+
+[connection signal="area_entered" from="personatge" to="personatge" method="_on_personatge_area_entered"]
+[connection signal="area_exited" from="personatge" to="personatge" method="_on_personatge_area_exited"]
+[connection signal="area_exited" from="Zona" to="personatge" method="_on_Zona_area_exited"]

@@ -1,6 +1,6 @@
-extends Sprite
+extends Area2D
 
-var velocitat = 300
+var velocitat = 400
 var direccio = Vector2(0,0)
 func _ready():
 	position = Vector2(100, 300)	
@@ -19,3 +19,13 @@ func _process (delta):
 	
 	
 	position += direccio.normalized() * velocitat * delta
+
+
+func _on_personatge_area_entered(area):
+	modulate = Color(1,0,0)
+	area.modulate = Color(0,1,0)
+
+
+func _on_personatge_area_exited(area):
+	modulate = Color(1,1,1)
+	area.modulate = Color(1,1,1)
