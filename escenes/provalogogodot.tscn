@@ -11,11 +11,12 @@ __meta__ = {
 [node name="personatge" parent="." instance=ExtResource( 2 )]
 
 [node name="Zona" parent="." instance=ExtResource( 1 )]
-position = Vector2( 972, 158 )
+position = Vector2( 1045, 100 )
 rotation = 3.14159
 scale = Vector2( 0.509667, -0.588677 )
 
 [node name="Zona2" parent="." instance=ExtResource( 1 )]
+position = Vector2( -3, -6 )
 
 [connection signal="area_entered" from="personatge" to="personatge" method="_on_personatge_area_entered"]
 [connection signal="area_exited" from="personatge" to="personatge" method="_on_personatge_area_exited"]
