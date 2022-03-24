@@ -20,5 +20,24 @@ func _physics_process(delta):
 		salts=1
 	
 	velocitat=move_and_slide(velocitat, Vector2.UP)
+	animacio(velocitat)
+	
+func animacio(velocitat):
+	if velocitat.x > 0:
+		$AnimatedSprite.play("caminar")
+		$AnimatedSprite.flip_h=false
+	elif velocitat.x < 0:
+		$AnimatedSprite.play("caminar")
+		$AnimatedSprite.flip_h=true
+	if abs(velocitat.x)<0.1:
+		$AnimatedSprite.play("quiet")
+	if velocitat.y > 0:
+		$AnimatedSprite.play("saltar")
 	
 	
+	
+	
+
+
+func _on_Area2D_body_entered(body):
+	get_tree().change_scene("res://escenes/escena2.tscn")
