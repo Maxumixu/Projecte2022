@@ -8,21 +8,21 @@
 [ext_resource path="res://imatges/FONDO2.PNG" type="Texture" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 126, 24 )
+extents = Vector2( 122.75, 24 )
 
 [node name="Pantalla cosos" type="Node2D"]
 
 [node name="Personatge1" parent="." instance=ExtResource( 1 )]
-position = Vector2( 455, 618 )
+position = Vector2( 462, 578 )
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 484, -1407 )
+position = Vector2( 481, -1404 )
 shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="Area2D"]
-position = Vector2( 481.324, -1406.68 )
+position = Vector2( 471, -1413 )
 rotation = 1.5708
 scale = Vector2( 0.0595913, 0.154806 )
 texture = ExtResource( 5 )
@@ -34,21 +34,19 @@ scale = Vector2( 2.12, 1.79642 )
 texture = ExtResource( 3 )
 
 [node name="Paret" parent="." instance=ExtResource( 4 )]
-position = Vector2( 518, 13 )
+position = Vector2( 510, 22 )
 
 [node name="Paret2" parent="." instance=ExtResource( 4 )]
 position = Vector2( 140, 16 )
 
 [node name="fondo2" type="Sprite" parent="."]
 show_behind_parent = true
-position = Vector2( 482.75, -1005 )
+position = Vector2( 483, -1004 )
 scale = Vector2( 2.1225, 2.29111 )
 texture = ExtResource( 6 )
 
-[node name="Timer" type="Timer" parent="."]
-
 [node name="Terra" parent="." instance=ExtResource( 2 )]
-position = Vector2( -3015, 79 )
+position = Vector2( -3020, 75 )
 scale = Vector2( 5, 1 )
 
 [node name="Terra2" parent="." instance=ExtResource( 2 )]
@@ -64,7 +62,7 @@ position = Vector2( -278, -409 )
 position = Vector2( -149, -254 )
 
 [node name="Terra6" parent="." instance=ExtResource( 2 )]
-position = Vector2( -271, -574 )
+position = Vector2( -281, -574 )
 
 [node name="Terra7" parent="." instance=ExtResource( 2 )]
 position = Vector2( -158, -672 )
@@ -88,12 +86,15 @@ position = Vector2( -153, -1168 )
 position = Vector2( -275, -1369 )
 
 [node name="Terra14" parent="." instance=ExtResource( 2 )]
-position = Vector2( -275, -1579 )
+position = Vector2( -277, -1584 )
 
 [node name="Terra15" parent="." instance=ExtResource( 2 )]
 position = Vector2( -151, -1702 )
 
 [node name="Terra16" parent="." instance=ExtResource( 2 )]
-position = Vector2( -276, -1823 )
+position = Vector2( -275, -1829 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 30.0
 
 [connection signal="body_entered" from="Area2D" to="Personatge1" method="_on_Area2D_body_entered"]
