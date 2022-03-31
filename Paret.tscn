@@ -1,13 +1,13 @@
 [gd_scene load_steps=2 format=2]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 27.8302, 620.122 )
+extents = Vector2( 27.8302, 1450.11 )
 
 [node name="Paret" type="StaticBody2D"]
 position = Vector2( 481, 13 )
 scale = Vector2( 2.12, 1.79642 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 73.5849, -297.258 )
+position = Vector2( 73.5849, -1127.24 )
 scale = Vector2( 1, 1 )
 shape = SubResource( 2 )

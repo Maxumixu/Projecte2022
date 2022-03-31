@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://escenes/Personatge1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://escenes/Terra.tscn" type="PackedScene" id=2]
@@ -6,9 +6,10 @@
 [ext_resource path="res://Paret.tscn" type="PackedScene" id=4]
 [ext_resource path="res://imatges/HD-wallpaper-portal-morty-rick.jpg" type="Texture" id=5]
 [ext_resource path="res://imatges/FONDO2.PNG" type="Texture" id=6]
+[ext_resource path="res://imatges/FONDO3.png" type="Texture" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 122.75, 24 )
+extents = Vector2( 121, 20.5 )
 
 [node name="Pantalla cosos" type="Node2D"]
 
@@ -18,13 +19,14 @@ position = Vector2( 462, 578 )
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 481, -1404 )
+position = Vector2( 479, -4486.5 )
 shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="Area2D"]
-position = Vector2( 471, -1413 )
+show_behind_parent = true
+position = Vector2( 482.425, -4605.06 )
 rotation = 1.5708
-scale = Vector2( 0.0595913, 0.154806 )
+scale = Vector2( 0.367499, 0.249978 )
 texture = ExtResource( 5 )
 
 [node name="fondo1" type="Sprite" parent="."]
@@ -41,7 +43,7 @@ position = Vector2( 140, 16 )
 
 [node name="fondo2" type="Sprite" parent="."]
 show_behind_parent = true
-position = Vector2( 483, -1004 )
+position = Vector2( 482, -1005 )
 scale = Vector2( 2.1225, 2.29111 )
 texture = ExtResource( 6 )
 
@@ -83,18 +85,90 @@ position = Vector2( -276, -1070 )
 position = Vector2( -153, -1168 )
 
 [node name="Terra13" parent="." instance=ExtResource( 2 )]
-position = Vector2( -275, -1369 )
+position = Vector2( -283, -1367 )
 
 [node name="Terra14" parent="." instance=ExtResource( 2 )]
-position = Vector2( -277, -1584 )
+position = Vector2( -279, -1582 )
 
 [node name="Terra15" parent="." instance=ExtResource( 2 )]
-position = Vector2( -151, -1702 )
+position = Vector2( -154, -1702 )
 
 [node name="Terra16" parent="." instance=ExtResource( 2 )]
 position = Vector2( -275, -1829 )
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 30.0
+
+[node name="Fondo3" type="Sprite" parent="."]
+show_behind_parent = true
+position = Vector2( 482, -1885 )
+scale = Vector2( 2.11, 2.45283 )
+texture = ExtResource( 6 )
+
+[node name="Fondo4" type="Sprite" parent="."]
+show_behind_parent = true
+position = Vector2( 480, -2854 )
+scale = Vector2( 2.11, 2.45283 )
+texture = ExtResource( 7 )
+
+[node name="Sprite" type="Sprite" parent="."]
+show_behind_parent = true
+position = Vector2( 484, -3941 )
+scale = Vector2( 2.13, 2.74224 )
+texture = ExtResource( 7 )
+
+[node name="Terra17" parent="." instance=ExtResource( 2 )]
+position = Vector2( -160, -2026 )
+
+[node name="Terra18" parent="." instance=ExtResource( 2 )]
+position = Vector2( -279, -2235 )
+
+[node name="Terra19" parent="." instance=ExtResource( 2 )]
+position = Vector2( -285, -2465 )
+
+[node name="Terra20" parent="." instance=ExtResource( 2 )]
+position = Vector2( -280, -2724 )
+
+[node name="Terra21" parent="." instance=ExtResource( 2 )]
+position = Vector2( -157, -2599 )
+
+[node name="Terra22" parent="." instance=ExtResource( 2 )]
+position = Vector2( -285, -2950 )
+
+[node name="Terra23" parent="." instance=ExtResource( 2 )]
+position = Vector2( -280, -3435 )
+
+[node name="Terra24" parent="." instance=ExtResource( 2 )]
+position = Vector2( -281, -3172 )
+
+[node name="Terra25" parent="." instance=ExtResource( 2 )]
+position = Vector2( -147, -3308 )
+
+[node name="Terra26" parent="." instance=ExtResource( 2 )]
+position = Vector2( -287, -3605 )
+
+[node name="Terra30" parent="." instance=ExtResource( 2 )]
+position = Vector2( -152, -4830 )
+
+[node name="Terra31" parent="." instance=ExtResource( 2 )]
+position = Vector2( -278, -4721 )
+
+[node name="Terra32" parent="." instance=ExtResource( 2 )]
+position = Vector2( -273, -4537 )
+
+[node name="Terra33" parent="." instance=ExtResource( 2 )]
+position = Vector2( -150, -4394 )
+
+[node name="Terra34" parent="." instance=ExtResource( 2 )]
+position = Vector2( -280, -4240 )
+
+[node name="Terra35" parent="." instance=ExtResource( 2 )]
+position = Vector2( -275, -3991 )
+
+[node name="Terra36" parent="." instance=ExtResource( 2 )]
+position = Vector2( -280, -3849 )
+
+[node name="Terra37" parent="." instance=ExtResource( 2 )]
+position = Vector2( -151, -3705 )
 
 [connection signal="body_entered" from="Area2D" to="Personatge1" method="_on_Area2D_body_entered"]
