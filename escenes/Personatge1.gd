@@ -41,3 +41,45 @@ func animacio(velocitat):
 
 func _on_Area2D_body_entered(body):
 	get_tree().change_scene("res://escenes/escena2.tscn")
+
+func _on_objectes2_body_entered(body):
+	get_tree().reload_current_scene()
+
+
+func _on_objectes_body_entered(body):
+	get_tree().reload_current_scene()
+
+
+func _on_objectes3_body_entered(body):
+	get_tree().reload_current_scene()
+
+
+func _on_objectes4_body_entered(body):
+	get_tree().reload_current_scene()
+
+
+func _on_objectes5_body_entered(body):
+	get_tree().reload_current_scene()
+
+
+func _on_objectes6_body_entered(body):
+	get_tree().reload_current_scene()
+
+
+
+
+
+func _on_objectes8_body_entered(body):
+	get_tree().reload_current_scene()
+
+
+func _on_objectes9_body_entered(body):
+	get_tree().reload_current_scene()
+
+
+func _on_objectes10_body_entered(body):
+	get_tree().reload_current_scene()
+
+
+func _on_objectes7_body_entered(body):
+	get_tree().reload_current_scene()
